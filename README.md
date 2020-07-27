@@ -1,5 +1,7 @@
 # Welcome to [Pong JS](https://imagineeeinc.github.io/pongjs/app/) Arcade
 
+[Go To Pong JS Arcade](https://imagineeeinc.github.io/pongjs/app/)
+
 Pong JS Arcade is a small Pong Game
 
 Made With HTML5 Canvas element and Vanilla JavaScript
