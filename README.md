@@ -1,4 +1,4 @@
-# Welcome to [Pong JS](https://imagineeeinc.github.io/pongjs/app/) Arcade
+# Welcome to [Pong JS](https://imagineeeinc.github.io/pongjs/) Arcade
 
 # [Go To Pong JS Arcade](https://imagineeeinc.github.io/pongjs/app/)
 
