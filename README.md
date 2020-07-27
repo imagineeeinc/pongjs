@@ -11,4 +11,4 @@ To Start CLick the play button
 Move your mouse up and down to move the paddle
 or use the 'W' key to move the paddle up and use the 'S' key to move the paddle down
 
-## Best Played on Compurter
+## Should be Played on Compurter
