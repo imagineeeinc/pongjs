@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PONG JS</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-title" content="Pong JS">
+        <meta name="description" content="A small Pong Game">
+
+        <script src="install.js"></script>
+
+        <script type="text/javascript">
+        //first check if the browser supports the service worker
+        if ("serviceWorker" in navigator) {
+        //navigator.serviceWorker returns a service worker container, 
+        // that has a method to register it to the browser. 
+        //Register method returns a promise, which allows you to use the ‘.then’ or ‘.catch’ syntax
+        navigator.serviceWorker.register("service-worker.js")
+        .catch((err) => {console.log("Service worker registration failed");});
+        }
+        </script>
+        <script src="https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js"></script>
+        <script src="service-worker.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <audio id="up">
+            <source src="up.wav" type="audio/wav">
+        </audio>
+        <div id="box">
+            <div id="controls">
+                <div id="name">
+                    <b>:<i>PONG JS Arcade</i>:</b>
+                </div>
+                <p>Move your mouse up and down to move the paddle</p>
+                <p>or use the 'W' key to move the paddle up and use the 'S' key to move the paddle down</p>
+                <div id="play" onclick="startup()">
+                    <b>PLAY</b>
+                </div>
+            </div>
+            <div id="screen">
+                <div id="glass">
+                    <canvas id="game"></canvas>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

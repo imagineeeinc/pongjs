@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "Pong JS",
+    "short_name": "Pong",
+    "start_url": "https://imagineeeinc.github.io/pongjs/app/index.html",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src": "https://imagineeeinc.github.io/pongjs/app/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/pongjs/app/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/pongjs/app/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/pongjs/app/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "https://imagineeeinc.github.iopongjs/app/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "https://imagineeeinc.github.iopongjs/app/favicon.ico",
+            "type": "image/ico",
+            "sizes": "48x48"
+        }
+    ],
+    "url": "https://imagineeeinc.github.io/pongjs/app/",
+    "lang": "English",
+    "screenshots": [],
+    "description": "A small Pong Game"
+}
