@@ -78,6 +78,8 @@ function startgame() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ballx = canvas.width / 2;
     bally = canvas.height / 2  
+    speedx = speedx
+    speedy = speedy
     var fps = 30
     setInterval(function() {
         move()
