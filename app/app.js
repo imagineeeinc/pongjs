@@ -29,8 +29,8 @@ window.addEventListener('mousedown mouseup', function mouseState(e) {
 
 var bally
 var ballx
-var speedx
-var speedx
+var speedy = 0.5
+var speedx = 2
 var paddle1y = 55;
 var paddle2y = 55;
 var ghostx
@@ -77,9 +77,7 @@ function startgame() {
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ballx = canvas.width / 2;
-    bally = canvas.height / 2
-    var speedx = 2  
-    var speedy = 0.5
+    bally = canvas.height / 2  
     var fps = 30
     setInterval(function() {
         move()
