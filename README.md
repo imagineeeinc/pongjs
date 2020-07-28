@@ -17,4 +17,4 @@ or use the On screen Arrow keys if you don't have a physical keyboard or if your
 ## Should be Played on Compurter, But can be played on mobile devices
 
 ### [releses](https://github.com/imagineeeinc/pongjs/releases/)
-### [MIT Licece](https://github.com/imagineeeinc/pongjs/blob/master/LICENSE.md)
+### [MIT licence](https://github.com/imagineeeinc/pongjs/blob/master/LICENSE.md)
