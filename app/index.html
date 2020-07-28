@@ -3,6 +3,7 @@
     <head>
         <title>PONG JS</title>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <meta name="viewport" content= "width=device-width, user-scalable=no">
 
         <meta name="theme-color" content="#ffffff"/>
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -34,6 +35,7 @@
         <script src="app.js"></script>
     </head>
     <body>
+        <div id="display"></div>
         <audio id="up">
             <source src="up.wav" type="audio/wav">
         </audio>
@@ -44,8 +46,16 @@
                 </div>
                 <p>Move your mouse up and down to move the paddle</p>
                 <p>or use the 'W' key to move the paddle up and use the 'S' key to move the paddle down</p>
+                <p>or use the On screen Arrow keys if you don't have a physical keyboard or if your device is a touch device</p>
                 <div id="play" onclick="startup()">
                     <b>PLAY</b>
+                </div>
+                <div style="text-align: center;">- - - - - - - -</div>
+                <div id="buttons" onmousedown="up()">
+                    <b>⇡</b>
+                </div>
+                <div id="buttons" onmousedown="down()">
+                    <b>⇣</b>
                 </div>
             </div>
             <div id="screen">

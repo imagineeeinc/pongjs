@@ -2,21 +2,30 @@ document.onkeypress = function (e) {
     e = e || window.event;
     // use e.keyCode
     //console.log(event);
-    if (event.key === 'w') {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_'
-    paddle1y -= 2
+    if (event.keyCode == 119) {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_'
+    paddle1y -= 5
     if (paddle1y < 0){
         paddle1y = 0
     }
     }
-    if (event.key === 's') {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_'
+    if (event.keyCode == 115) {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_', "event.key === 's'" for keys
     var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
-    paddle1y += 2
+    paddle1y += 5
     if (paddle1y > canvas.height-paddleheight){
         paddle1y = canvas.height-paddleheight
     }
     }
 };
+
+//window.addEventListener('click', function(evt) {mousepos(evt);}, false);
+//window.addEventListener('mousedown', function(evt) {mousepos(evt);}, false);
+window.addEventListener('mousedown mouseup', function mouseState(e) {
+    if (e.type == "mousedown") {
+        //code triggers on hold
+        mousepos(evt);
+    }
+});
 
 var bally
 var ballx
@@ -95,6 +104,24 @@ function mousepos(evt) {
     if (paddle1y < 0){
         paddle1y = 0
     }
+}
+function up() {
+    /*paddle1y -= 4
+    if (paddle1y < 0){
+        paddle1y = 0
+    }*/
+    var simulatedEvent = new KeyboardEvent("keypress", {keyCode: 119, which: 119});
+    document.dispatchEvent(simulatedEvent);
+}
+function down() {
+    /*var canvas = document.getElementById("game");
+    var ctx = canvas.getContext("2d");
+    paddle1y += 4
+    if (paddle1y > canvas.height-paddleheight){
+        paddle1y = canvas.height-paddleheight
+    }*/
+    var simulatedEvent = new KeyboardEvent("keypress", {keyCode: 115, which: 115});
+    document.dispatchEvent(simulatedEvent);
 }
 function reset() {
     var canvas = document.getElementById("game");

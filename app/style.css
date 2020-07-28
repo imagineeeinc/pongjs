@@ -1,10 +1,10 @@
 body {
-    margin: 0px;
-    font-family:  'Space Mono, Arial', monospace;
-    font: monospace;
-    background-color: black;
-    color: white;
-    border-radius: 5px; 
+  margin: 0px;
+  font-family:  'Space Mono, Arial', monospace;
+  font: monospace;
+  background-color: black;
+  color: white;
+  border-radius: 5px; 
 }
 #box {
     background-color: darkgrey;
@@ -25,6 +25,7 @@ body {
     text-align: center;
     cursor: pointer;
     color: black;
+    margin-bottom: 20px;
 }
 #play:hover {
   background: #88ff00;
@@ -32,6 +33,27 @@ body {
   box-shadow:  1px 1px 3px black;
 }
 #play:active {
+  background-color: #325e00;
+  color: white;
+  box-shadow: 0px 1px 1px lightgrey inset;
+}
+#buttons {
+  font-size: 70px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 20px;
+    border: lightgrey solid 3px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+#buttons:hover {
+  background: #88ff00;
+  color: white;
+  box-shadow:  1px 1px 3px black;
+}
+#buttons:active {
   background-color: #325e00;
   color: white;
   box-shadow: 0px 1px 1px lightgrey inset;
@@ -74,6 +96,46 @@ body {
 #glass { 
     width: 100%;
     height: 100%;
+}
+@media only screen and (min-width: 680px) {
+  #display {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 679px) and (orientation: portrait){
+  body {
+    /*transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;*/
+    visibility: hidden;
+    zoom: 100%;
+    }
+    #display {
+      visibility: visible;
+      text-align: center;
+      margin-top: 400px;
+    }
+    #display:before {
+      visibility: visible;
+      content: 'If you want to play this game you need to turn your device to landscapemode';
+    }
+}
+@media only screen and (max-width: 812px) and (orientation: landscape){
+  body {
+    /*overflow-y: hidden;
+    overflow-x: hidden;*/
+  }
+  #display {
+    visibility: hidden;
+    margin-top: 0px;
+  }
+  body {
+    zoom: 52%; /* Webkit browsers */
+  }   
 }
 @keyframes flicker {
     0% {
