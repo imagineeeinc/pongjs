@@ -134,7 +134,7 @@ body {
     margin-top: 0px;
   }
   body {
-    zoom: 48%; /* Webkit browsers */
+    zoom: 45%; /* Webkit browsers */
   }   
 }
 @keyframes flicker {
