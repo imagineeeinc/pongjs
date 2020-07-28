@@ -119,7 +119,7 @@ body {
     top: 100%;
     left: 0;*/
     visibility: hidden;
-    zoom: 100%;
+    zoom: 50%;
     }
     #display {
       visibility: visible;
