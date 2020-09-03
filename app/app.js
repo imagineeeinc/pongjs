@@ -3,7 +3,7 @@ document.onkeypress = function (e) {
     // use e.keyCode
     //console.log(event);
     if (event.keyCode == 119) {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_'
-    paddle1y -= 5
+    paddle1y -= 10
     if (paddle1y < 0){
         paddle1y = 0
     }
@@ -11,7 +11,7 @@ document.onkeypress = function (e) {
     if (event.keyCode == 115) {//"&& event.ctrlKeyuse" for using combinations like 'ctrl+_', "event.key === 's'" for keys
     var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
-    paddle1y += 5
+    paddle1y += 10
     if (paddle1y > canvas.height-paddleheight){
         paddle1y = canvas.height-paddleheight
     }
